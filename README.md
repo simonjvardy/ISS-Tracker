@@ -350,7 +350,7 @@ The following website was used for design ideas and a clean modern look:
 - [Code Institute](https://codeinstitute.net/full-stack-software-development-diploma/) Course material for the inspiration from code-along challenges.
 - [San Francisco State Univerity](https://its.sfsu.edu/projects/resources) PMO Resources webpage where the original Unit Testing and UAT Testing Plan documents were sourced
 - [usersnap.com blog](https://usersnap.com/blog/user-acceptance-testing-example/) which was the inspiration for the modified UAT Testing document and wording.
-- [Richard Read](https://github.com/Readri205) for project inspiration and ideas.
+- [Richard Read](https://github.com/Readri205/MS2_Project) for project inspiration and ideas.
 - [Frozenaught](https://github.com/Frozenaught/homechopped) for further README.md content ideas.
 - [Gary Simons](https://github.com/GarySimons/WildBunch-Florist) for further README.md content ideas.
 - [Software Testing Fundamentals (STF)](http://softwaretestingfundamentals.com/) for an excellent guide on building testing processes.
