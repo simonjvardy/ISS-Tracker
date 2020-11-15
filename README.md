@@ -10,7 +10,7 @@ in a dashboard display that is easy to understand and something I'd want to use 
 ![Responsive Layout Screenshots](/wireframes/am-i-responsive.jpg) 
 
 To allow ease of deployment for end users such as school clubs, it was important to try to source all the data from APIs that didn't require the 
-need to register and use API keys as well as include much information about any API Rate Limiting of requests.
+need to register and use API keys as well as including much information about any API Rate Limiting of requests.
 
 ## Contents ##
 
@@ -61,39 +61,49 @@ need to register and use API keys as well as include much information about any 
 
 ### Project Goals ###
 
-The **goal** of this project is to build a website which allows Aviation Consultancy LLC to showcase its B2B services to potential business customers.
+The **goal** of this project is to build a website which displays near realtime data of the ISS Space Station in a dashboard format.
 
-The features on the website will:
+The **features** on the website will:
 
-- Give business customers more ways to interact with Aviation Consultancy LLC (contact form, social media, phone,  email).
-- Enable the business to showcase their services and key staff members.
+- Show a world map with the continuously updated position of the ISS Space Station overlayed on the map
+- Present statistical data to the user relating to the ISS Space Station in a dashboard layout.
+- Allow users to email comments and new feature requests to the site owners via a contact form.
 
 I achieve this by:
 
-- Providing contact details and social media links in the footer section of each page.
+- Proving continuous, near realtime ISS data using REST API requests.
+- Presenting a world map with the current ISS position as a custom map marker.
+- Presenting the ISS data in a clean, modern dashboard design.
 - Providing an option to the customers to submit their contact and request details in a form.
-- Providing a summary of the consultancy services provided by Aviation Consultancy LLC
-- Providing an option to the customers to see staff member biographies and links to social media to find out more.
 
 ### User Goals ###
 
-- **Understand** whether the provided services solve their problems or pain points.
-- **Contact** the business to submit a project proposal.
+- **Receive** ISS Space Station data presented in a dashboard layout.
+- **Contact** the site owners to submit comments and new feature requests.
 
 ### User Stories ###
 
-- As a **user**, I want to see a 
-- As a **user**, I can see a 
-- As a **user**, I can see a 
-- As a **user**, I can see a 
-
+- As a **user**, I want to see a responsive navigation menu.
+- As a **user**, I can see a world map showing the current location of the ISS Space Station.
+- As a **user**, I can see the ISS Space Station location updating regularly.
+- As a **user**, I can see a dashboad of current ISS data:
+  - The ISS latitude and Longitude
+  - The ISS orbital altitude.
+  - The ISS orbital velocity.
+  - The number of astronaughts onboard and their nationality
+  - The time the ISS has been in Earth orbit.
+  - The ISS is in daylight or eclipsed
+  - The which timezone and country the ISS is currenty above
+- As a **user**, I can see a switch to change the displayed units in metric or imperial
+- As a **user**, I can see a button to change between light and dark display mode options.
+- As a **user**, I can see a contact us form that emails the site owners after submission.
 
 ### Site Owner Goals ###
 
-- As a **site owner**, I want to create an **interactive website** allowing the user to easily understand the services available
-- As a **site owner**, I want the **user** to be able to 
-- As a **site owner**, I want the **user** to be able to 
-
+- As a **site owner**, I want to create an **interactive website** to present a clean, easy to understand display of information.
+- As a **site owner**, I want the **user** to be able to have the data automatically refreshed as regularly as possible.
+- As a **site owner**, I want the **user** to be able to see errors displayed in a user friendly way.
+- As a **site owner**, I want the **user** to be able to contact me via email with their contact details, comments and new feature requests.
 
 --- 
 
@@ -164,9 +174,9 @@ The final wireframes were created using Balsamiq adapted from the original hand 
 - [Where The ISS At?](https://wheretheiss.at/w/developer)
   - WTIA REST API providing position, velocity, altitude, timezone for a set of cordinates etc.
 - [Leaflet.js](https://leafletjs.com/download.html)
-  - 
+  - [TBC]
 - [OpenStreetMaps.org](https://popper.js.org/)
-  - 
+  - [TBC]
 - [EmailJS](https://www.emailjs.com/)
   - A service using a JavaScript SDK that allows you to send emails without the need for backend development.
   
@@ -348,6 +358,8 @@ The following website was used for design ideas and a clean modern look:
 
 ### Acknowledgements ###
 
+- [Simon Vardy](https://github.com/simonjvardy/Aviation-Consultancy) MS-1 Project for the re-use of many ideas and code snippets.
+- [NASA ISS Mission Page](https://www.nasa.gov/mission_pages/station/main/index.html) for it's endless supply of cool ideas, images, data, resources and all round awesomeness!
 - [W3Schools](https://www.w3schools.com/) for just being a constant source of help and inspiration!
 - [Code Institute](https://codeinstitute.net/full-stack-software-development-diploma/) Course material for the inspiration from code-along challenges.
 - [San Francisco State Univerity](https://its.sfsu.edu/projects/resources) PMO Resources webpage where the original Unit Testing and UAT Testing Plan documents were sourced
@@ -361,14 +373,11 @@ The following website was used for design ideas and a clean modern look:
 - [digitaljhelms](https://gist.github.com/digitaljhelms/4287848) for ideas and help with GitHub branch naming conventions.
 - [TutorialRepublic](https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/) for Boostrap help and tutorials.
 - [Stack Overflow](https://stackoverflow.com/questions/49042458/how-do-i-create-a-transparent-jumbotron-with-bootstrap-v-4-0-0) for fixing the Jumbotron background problem.
-- [NASA]()
 - [Bootstrap](https://getbootstrap.com/)
-  - [Accordion](https://getbootstrap.com/docs/4.5/components/collapse/#accordion-example) example code was copied and adapted for the Privacy Policy and Terms and Conditions pages
   - [Jumbotron](https://getbootstrap.com/docs/4.5/components/jumbotron/) example code was copied and adapted for the Home page CTA / Hero image.
   - [Cards](https://getbootstrap.com/docs/4.5/components/card/) example code was copied and adapted for the Home page features section.
   - [Modal](https://getbootstrap.com/docs/4.5/components/modal/) example code was copied and adapted for the Contact Us form.
   - [Forms](https://getbootstrap.com/docs/4.5/components/forms/) example code was copied and adapted for the Contact Us form.
-  - [Carousel](https://getbootstrap.com/docs/4.5/components/carousel/) example code was copied and adapted for the testimonials carousel.
   - [Embeds](https://getbootstrap.com/docs/4.0/utilities/embed/) example code was copied and adapted for the Google Maps embedded iframe
   - [Icon Library](https://icons.getbootstrap.com/) icon HTML SVG tag code copied for the Contact Us modals form input fields
   
