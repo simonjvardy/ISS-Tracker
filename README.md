@@ -1,13 +1,16 @@
 ![ISS Tracker](assets/img/logo-image.jpg)
 
-The idea was to build a site that could be an interesting learning tool for school astronomy clubs to use. 
-Looking through online resources for tracking / viewing the International Space Station (ISS) the available data was good but the sites and apps 
-lacked features to present the information that was easy to consume. So I wanted to build a tracking app that combined freely available API data 
-from multiple sources and to present the ISS tracking information in a dashboard display that is easy to understand and something I'd want to use regularly myself.
+The idea for this project is to build a site that would be an interesting learning tool for school astronomy clubs to use. 
+Looking through online resources for tracking / viewing the International Space Station (ISS) location, the available data was 
+good but the sites and apps lacked features to present the information that was easy to consume and the look and feel haven't been updated. 
+So I wanted to build a tracking app that combined freely available API data from multiple sources and to present the ISS tracking information 
+in a dashboard display that is easy to understand and something I'd want to use regularly myself.
 
 
 ![Responsive Layout Screenshots](/wireframes/am-i-responsive.jpg) 
 
+To allow ease of deployment for end users such as school clubs, it was important to try to source all the data from APIs that didn't require the 
+need to register and use API keys as well as include much information about any API Rate Limiting of requests.
 
 ## Contents ##
 
@@ -18,7 +21,6 @@ from multiple sources and to present the ISS tracking information in a dashboard
   - [User Stories](#user-stories)
   - [Site Owner Goals](#site-owner-goals)
 - [Design Choices](#design-choices)
-  - [Topology](#topology)
   - [Fonts](#fonts)
   - [Colours](#colours)
   - [Wireframes](#wireframes)
@@ -31,10 +33,10 @@ from multiple sources and to present the ISS tracking information in a dashboard
 - [Features](#features)
   - [Features Implemented](#features-implemented)
   - [Future Features](#future-features)
-- [SEO](#seo)
-    - [HTML Sitemap links](#html-sitemap-links)
-    - [XML Sitemap file](#xml-sitemap-file)
-    - [Google Search Console](#google-search-console)
+- [API](#api)
+    - [API-1](#api-1)
+    - [API-2](#api-2)
+    - [API-3](#api-3)
 - [Version Control](#version-control)
     - [Gitpod Workspaces](#gitpod-workspaces)
     - [Branches](#branches)
@@ -45,7 +47,7 @@ from multiple sources and to present the ISS tracking information in a dashboard
 - [Testing](#testing)
 - [Bugs](#bugs)
 - [Deployment](#deployment)
-  - [Running Aviation-Consultancy Locally](#running-aviation-consultancy-locally)
+  - [Running ISS-Tracker Locally](#running-iss-tracker-locally)
 - [Credits](#credits)
   - [Images](#images)
   - [Colour](#colour)
@@ -302,9 +304,9 @@ The website was developed using both *Gitpod* and *Visual Studio Code* and using
 - Clicked to **confirm** my **selection**.
 - [ISS-Tracker](https://simonjvardy.github.io/ISS-Tracker/) is now **live** on **GitHub Pages**.
 
-### Running Aviation-Consultancy Locally ###
+### Running ISS-Tracker Locally ###
 
-Cloning Aviation-Consultancy from GitHub:
+Cloning ISS-Tracker from GitHub:
 
 - Navigate to **simonjvardy/ISS-Tracker**.
 - Click the green **Code** button.
@@ -312,7 +314,7 @@ Cloning Aviation-Consultancy from GitHub:
 - Using your favourite **IDE** open up your preferred terminal.
 - **Navigate** to your desired file location.
 
-Copy the following code and input it into your terminal to clone Aviation-Consultancy:
+Copy the following code and input it into your terminal to clone ISS-Tracker:
 
 ```git clone https://github.com/simonjvardy/ISS-Tracker.git```
 
