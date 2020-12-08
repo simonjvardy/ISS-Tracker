@@ -33,7 +33,7 @@ async function getISSDataInMetricUnits() {
     const data = await response.json();
 
     // even better, take the data object and place them into an object of separate variables
-    const {name, latitude, longitude, altitude} = data;
+    const {name, latitude, longitude, altitude, visibility, velocity, units} = data;
 
     // Code adapted from https://leafletjs.com/reference-1.7.1.html#marker
     // Changes the marker position to the given point - in this case the latitude & longitude values
@@ -49,6 +49,10 @@ async function getISSDataInMetricUnits() {
     document.getElementById('lat').textContent = latitude;
     document.getElementById('lon').textContent = longitude;
     document.getElementById('alt').textContent = altitude;
+    document.getElementById('visibility').textContent = visibility;
+    document.getElementById('velocity').textContent = velocity;
+    document.getElementById('altUnits').textContent = units;
+    document.getElementById('velocityUnits').textContent = units;
 
 }
 
