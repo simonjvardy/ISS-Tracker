@@ -1,4 +1,49 @@
+
+/* -------------------------------------Special Styling */
+* {
+    margin: 0;
+    padding 0;
+}
+
+.row,
+.container-fluid {
+        overflow-x: hidden;
+}
+
+/* -------------------------------------Body */
+/* -------------------------------------Ttile */
+
+.title-container {
+    height:100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* -------------------------------------ISS Map */
+
+.map-container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
 #issMap { 
     height: 512px; 
-    max-width: 1024px;
+    width: 100%;
 }
+
+/* -------------------------------------Dashboard Cards */
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    justify-content: center;
+    display: grid;
+    text-align: center;
+}
+

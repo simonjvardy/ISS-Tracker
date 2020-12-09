@@ -64,9 +64,20 @@ async function getISSDataInMetricUnits() {
     */
 
     // Add this into DOM elements
-    document.getElementById('name').textContent = name;
-    document.getElementById('lat').textContent = latitude.toFixed(2);
-    document.getElementById('lon').textContent = longitude.toFixed(2);
+    if(latitude < 0) {
+        latitudeSouth = latitude * -1;
+        document.getElementById('lat').textContent = latitudeSouth.toFixed(2) + "° S";
+    } else {
+        document.getElementById('lat').textContent = latitude.toFixed(2) + "° N";
+    }
+
+    if(longitude < 0) {
+        longitudeEast = longitude * -1;
+        document.getElementById('lon').textContent = longitudeEast.toFixed(2) + "° E";
+    } else {
+        document.getElementById('lon').textContent = longitude.toFixed(2) + "° W";
+    }
+    document.getElementById('name').textContent = name.toUpperCase();
     document.getElementById('alt').textContent = altitude.toFixed(2);
     document.getElementById('visibility').textContent = visibility;
     document.getElementById('velocity').textContent = velocity.toFixed(2);
