@@ -95,4 +95,4 @@ async function getISSDataInImperialUnits() {
 getISSDataInMetricUnits();
 getISSDataInImperialUnits();
 
-setInterval(getISSDataInMetricUnits, 1000);
+setInterval(getISSDataInMetricUnits, 2000);
