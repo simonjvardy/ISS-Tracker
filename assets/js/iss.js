@@ -73,9 +73,9 @@ async function getISSDataInMetricUnits() {
 
     if(longitude < 0) {
         longitudeEast = longitude * -1;
-        document.getElementById('lon').textContent = longitudeEast.toFixed(2) + "° E";
+        document.getElementById('lon').textContent = longitudeEast.toFixed(2) + "° W";
     } else {
-        document.getElementById('lon').textContent = longitude.toFixed(2) + "° W";
+        document.getElementById('lon').textContent = longitude.toFixed(2) + "° E";
     }
     document.getElementById('name').textContent = name.toUpperCase();
     document.getElementById('alt').textContent = altitude.toFixed(2);
@@ -95,4 +95,4 @@ async function getISSDataInImperialUnits() {
 getISSDataInMetricUnits();
 getISSDataInImperialUnits();
 
-setInterval(getISSDataInMetricUnits, 1000);
+setInterval(getISSDataInMetricUnits, 2000);
