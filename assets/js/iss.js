@@ -21,7 +21,7 @@ Creating a custom Map Marker icon
 Code adapted from https://leafletjs.com/examples/custom-icons/
 */
 const issMapIcon = L.icon({
-    iconUrl: '../assets/img/International_Space_Station200.png',
+    iconUrl: '../assets/img/iss200.png',
     iconSize:     [50, 32], // size of the icon
     iconAnchor:   [25, 16], // point of the icon which will correspond to marker's location
 });
