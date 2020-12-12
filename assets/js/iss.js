@@ -21,7 +21,7 @@ Creating a custom Map Marker icon
 Code adapted from https://leafletjs.com/examples/custom-icons/
 */
 const issMapIcon = L.icon({
-    iconUrl: '../assets/img/iss200.png',
+    iconUrl: 'assets/img/iss200.png',
     iconSize:     [50, 32], // size of the icon
     iconAnchor:   [25, 16], // point of the icon which will correspond to marker's location
 });
@@ -42,7 +42,7 @@ async function getISSDataInMetricUnits() {
     const data = await response.json();
 
     // even better, take the data object and place them into an object of separate variables
-    const {name, latitude, longitude, altitude, visibility, velocity, units} = data;
+    const {name, latitude, longitude, altitude, visibility, velocity, units, footprint} = data;
 
     /*
     Code adapted from https://leafletjs.com/reference-1.7.1.html#marker
@@ -54,14 +54,6 @@ async function getISSDataInMetricUnits() {
     // 
     issMapContainer.setView([latitude, longitude], issMapContainer.getZoom());
     
-    
-
-    /* 
-    Code adapted from https://leafletjs.com/reference-1.7.1.html#marker
-    Changes the circle position to the given point - 
-    n this case the latitude & longitude values
-    ISSFootprint.setLatLng([latitude, longitude]);
-    */
 
     // Add this into DOM elements
     if(latitude < 0) {
