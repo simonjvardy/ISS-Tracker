@@ -12,7 +12,7 @@ Code adapted from https://leafletjs.com/examples/quick-start/
 const attribution = 'Map Data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 
 // Code adapted from https://leafletjs.com/reference-1.7.1.html#tilelayer 
-const mapTilesURL = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}{r}.png';
+const mapTilesURL = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 const mapTiles = L.tileLayer(mapTilesURL, { attribution });
 mapTiles.addTo(issMapContainer);
 
