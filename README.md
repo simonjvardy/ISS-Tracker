@@ -7,7 +7,7 @@ So I wanted to build a tracking app that combined freely available API data from
 in a dashboard display that is easy to understand and something I'd want to use regularly myself.
 
 
-![Responsive Layout Screenshots](/wireframes/am-i-responsive.jpg) 
+![Responsive Layout Screenshots](/assets/img/am-i-responsive.png) 
 
 To allow ease of deployment for end users such as school clubs, it was important to try to source all the data from APIs that didn't require the 
 need to register and use API keys as well as including much information about any API Rate Limiting of requests.
